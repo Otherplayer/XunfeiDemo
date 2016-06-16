@@ -62,6 +62,7 @@
     //终止识别
     [_iflyRecognizer cancel];
     [_iflyRecognizer setDelegate:nil];
+    _iflyRecognizer = nil;
     
     [super viewWillDisappear:animated];
 }
