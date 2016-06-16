@@ -11,6 +11,6 @@
 @interface NSString (Categories)
 
 - (NSDictionary *)jsonInfo;
-- (BOOL)isExist;
+- (BOOL)isValuable;
 
 @end

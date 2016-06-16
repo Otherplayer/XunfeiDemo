@@ -28,7 +28,7 @@
     return nil;
 }
 
-- (BOOL)isExist{
+- (BOOL)isValuable{
     if (self == NULL) {
         return NO;
     }else if (!self){

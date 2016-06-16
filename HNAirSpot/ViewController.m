@@ -149,7 +149,7 @@
     
     NSString *resultStr = [[ISRDataHelper shareInstance] getResultFromJson:result];
     
-    if ([resultStr isExist]) {
+    if ([resultStr isValuable]) {
         [self.finalRecognizerResult appendString:resultStr];
     }
     
