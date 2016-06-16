@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		632A99B31D123A8B0057EE93 /* NSString+Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 632A99B21D123A8B0057EE93 /* NSString+Categories.m */; };
+		632A99B91D12708A0057EE93 /* ISRDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 632A99B61D12708A0057EE93 /* ISRDataHelper.m */; };
+		632A99BA1D12708A0057EE93 /* NSString+Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 632A99B81D12708A0057EE93 /* NSString+Categories.m */; };
 		63F1263D1D11465F00A2AFFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F1263C1D11465F00A2AFFD /* main.m */; };
 		63F126401D11465F00A2AFFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F1263F1D11465F00A2AFFD /* AppDelegate.m */; };
 		63F126431D11465F00A2AFFD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F126421D11465F00A2AFFD /* ViewController.m */; };
@@ -25,12 +26,13 @@
 		63F126691D1149F400A2AFFD /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F126681D1149F400A2AFFD /* libc++.tbd */; };
 		63F1266B1D1149FB00A2AFFD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F1266A1D1149FB00A2AFFD /* CoreLocation.framework */; };
 		63F1266D1D114A0400A2AFFD /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F1266C1D114A0400A2AFFD /* libz.tbd */; };
-		63F126741D11627800A2AFFD /* ISRDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F126731D11627800A2AFFD /* ISRDataHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		632A99B11D123A8B0057EE93 /* NSString+Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Categories.h"; sourceTree = "<group>"; };
-		632A99B21D123A8B0057EE93 /* NSString+Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Categories.m"; sourceTree = "<group>"; };
+		632A99B51D12708A0057EE93 /* ISRDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISRDataHelper.h; sourceTree = "<group>"; };
+		632A99B61D12708A0057EE93 /* ISRDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISRDataHelper.m; sourceTree = "<group>"; };
+		632A99B71D12708A0057EE93 /* NSString+Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Categories.h"; sourceTree = "<group>"; };
+		632A99B81D12708A0057EE93 /* NSString+Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Categories.m"; sourceTree = "<group>"; };
 		63F126381D11465F00A2AFFD /* HNAirSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNAirSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F1263C1D11465F00A2AFFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		63F1263E1D11465F00A2AFFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,8 +55,6 @@
 		63F126681D1149F400A2AFFD /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		63F1266A1D1149FB00A2AFFD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		63F1266C1D114A0400A2AFFD /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		63F126721D11627800A2AFFD /* ISRDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISRDataHelper.h; sourceTree = "<group>"; };
-		63F126731D11627800A2AFFD /* ISRDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISRDataHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +79,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		632A99B41D1270620057EE93 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				632A99B51D12708A0057EE93 /* ISRDataHelper.h */,
+				632A99B61D12708A0057EE93 /* ISRDataHelper.m */,
+				632A99B71D12708A0057EE93 /* NSString+Categories.h */,
+				632A99B81D12708A0057EE93 /* NSString+Categories.m */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
 		63F1262F1D11465F00A2AFFD = {
 			isa = PBXGroup;
 			children = (
@@ -98,16 +109,13 @@
 		63F1263A1D11465F00A2AFFD /* HNAirSpot */ = {
 			isa = PBXGroup;
 			children = (
+				632A99B41D1270620057EE93 /* tool */,
 				63F126521D1146B500A2AFFD /* lib */,
 				63F1263E1D11465F00A2AFFD /* AppDelegate.h */,
 				63F1263F1D11465F00A2AFFD /* AppDelegate.m */,
 				63F126411D11465F00A2AFFD /* ViewController.h */,
 				63F126421D11465F00A2AFFD /* ViewController.m */,
 				63F126441D11465F00A2AFFD /* Main.storyboard */,
-				63F126721D11627800A2AFFD /* ISRDataHelper.h */,
-				63F126731D11627800A2AFFD /* ISRDataHelper.m */,
-				632A99B11D123A8B0057EE93 /* NSString+Categories.h */,
-				632A99B21D123A8B0057EE93 /* NSString+Categories.m */,
 				63F126471D11465F00A2AFFD /* Assets.xcassets */,
 				63F126491D11465F00A2AFFD /* LaunchScreen.storyboard */,
 				63F1264C1D11465F00A2AFFD /* Info.plist */,
@@ -213,10 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				632A99B31D123A8B0057EE93 /* NSString+Categories.m in Sources */,
+				632A99BA1D12708A0057EE93 /* NSString+Categories.m in Sources */,
 				63F126431D11465F00A2AFFD /* ViewController.m in Sources */,
 				63F126401D11465F00A2AFFD /* AppDelegate.m in Sources */,
-				63F126741D11627800A2AFFD /* ISRDataHelper.m in Sources */,
+				632A99B91D12708A0057EE93 /* ISRDataHelper.m in Sources */,
 				63F1263D1D11465F00A2AFFD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
