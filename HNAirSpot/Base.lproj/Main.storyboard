@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G12a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,85 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkw-TG-C39">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="V74-gq-ejo"/>
+                                </constraints>
+                                <state key="normal" title="开始识别">
+                                    <color key="titleColor" red="0.15686275059999999" green="0.88235300780000003" blue="0.1960784495" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="V74-gq-ejo"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="V74-gq-ejo"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="startListenAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S29-yT-RuX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="识别结果" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwi-qS-z8G">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pkw-TG-C39" secondAttribute="trailing" id="Aoj-9k-haE"/>
+                            <constraint firstItem="pkw-TG-C39" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ict-GN-4DM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mwi-qS-z8G" secondAttribute="bottom" constant="426" id="Tes-TH-pJe"/>
+                            <constraint firstItem="Mwi-qS-z8G" firstAttribute="leading" secondItem="pkw-TG-C39" secondAttribute="leading" id="WVN-US-zwF"/>
+                            <constraint firstItem="Mwi-qS-z8G" firstAttribute="trailing" secondItem="pkw-TG-C39" secondAttribute="trailing" id="gEt-2b-vDD"/>
+                            <constraint firstItem="Mwi-qS-z8G" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hi8-1h-QDn"/>
+                            <constraint firstItem="pkw-TG-C39" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="147" id="ygL-9H-Hy6"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="pkw-TG-C39"/>
+                                <exclude reference="Mwi-qS-z8G"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="WVN-US-zwF"/>
+                                <exclude reference="gEt-2b-vDD"/>
+                                <exclude reference="hi8-1h-QDn"/>
+                                <exclude reference="Aoj-9k-haE"/>
+                                <exclude reference="Ict-GN-4DM"/>
+                                <exclude reference="ygL-9H-Hy6"/>
+                                <exclude reference="Tes-TH-pJe"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="pkw-TG-C39"/>
+                                <include reference="Mwi-qS-z8G"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="WVN-US-zwF"/>
+                                <include reference="gEt-2b-vDD"/>
+                                <include reference="hi8-1h-QDn"/>
+                                <include reference="Aoj-9k-haE"/>
+                                <include reference="Ict-GN-4DM"/>
+                                <include reference="ygL-9H-Hy6"/>
+                                <include reference="Tes-TH-pJe"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="labRecognizerResult" destination="Mwi-qS-z8G" id="mHe-Z3-3pl"/>
+                        <outlet property="startListening" destination="pkw-TG-C39" id="1TX-a6-y3M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="243" y="336"/>
         </scene>
     </scenes>
 </document>

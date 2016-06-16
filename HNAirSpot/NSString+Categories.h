@@ -10,4 +10,7 @@
 
 @interface NSString (Categories)
 
+- (NSDictionary *)jsonInfo;
+- (BOOL)isExist;
+
 @end
